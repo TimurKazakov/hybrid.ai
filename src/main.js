@@ -1,8 +1,26 @@
-import Vue from 'vue'
-import App from './App.vue'
+// Import Vue
+import Vue from 'vue';
+import VueRouter from 'vue-router';
+import Vuelidate from 'vuelidate';
 
-Vue.config.productionTip = false
+// Import Vue App, routes, store
+import App from './App';
+import routes from './routes';
+
+Vue.use(VueRouter);
+Vue.use(Vuelidate);
+
+// Configure router
+
+const router = new VueRouter({
+    routes,
+    linkActiveClass: 'active',
+    mode: 'history'
+});
 
 new Vue({
-  render: h => h(App),
-}).$mount('#app')
+    el: '#app',
+    render: h => h(App),
+    router
+});
+

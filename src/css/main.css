@@ -1,0 +1,88 @@
+/*export to App.vue component */
+
+@import "reset.css";
+
+@import url('https://rsms.me/inter/inter.css');
+html { font-family: 'Inter', sans-serif; }
+@supports (font-variation-settings: normal) {
+    html { font-family: 'Inter var', sans-serif; }
+}
+
+body{
+    background:  #FAF3F3;
+    /*font-family: 'Inter',Arial, sans-serif;*/
+}
+
+h2{
+    font-size: 2.5em;
+    text-align: center;
+    color: #1E1A3E;
+}
+
+a{
+    font-size: 2.5em;
+    text-align: center;
+    color: #1E1A3E;
+}
+
+form{
+    margin: 10% auto;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 5% 5%;
+    background: white;
+    border-radius: 50px;
+    letter-spacing: 0.02em;
+}
+
+label{
+    font-size: 2.5em;
+    font-style: normal;
+    font-weight: normal;
+    align-items: center;
+    display: block;
+    text-align: left;
+    color: rgba(0, 0, 0, 0.8);
+    margin: 0 5%;
+    position: relative;
+
+
+}
+input{
+    position: relative;
+    font-size: 2.5em;
+    display: block;
+    background: #F3F3FA;
+    border-radius: 50px;
+    padding: 5% 5%;
+    margin: 5% 0;
+    width: 100%;
+}
+input.is-invalid{
+    background:rgba(255, 102, 131, .2); ;
+   /*opacity: 0.2;*/
+}
+#password{
+    color: #181C43;
+}
+#password::placeholder{
+    color: #181C43;
+    position: relative;
+}
+
+#submit{
+    display: block;
+    margin-top: 10%;
+    border-radius: 50px;
+    background: #181C43;
+    color: white;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 2.5em;
+    align-items: center;
+    text-align: center;
+    padding: 5% 5%;
+
+}
